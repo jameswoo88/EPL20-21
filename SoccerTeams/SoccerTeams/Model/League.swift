@@ -7,7 +7,7 @@
 
 import Foundation
 
-class League {
+class League: Codable {
     let leagueName: String
     let leagueImage: String
     let teams: [Team]

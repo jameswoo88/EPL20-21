@@ -30,14 +30,14 @@ class TeamController {
         let westHam = Team(teamName: "West Ham United", teamImage: "west ham united", city: "west ham united", stadium: "London Stadium")
         let wolverhampton = Team(teamName: "Wolverhampton Wanderers", teamImage: "wolverhampton wanderers", city: "Wolverhampton", stadium: "Molineux Stadium")
         
-        
-        return[arsenal, astonVilla, brightonHovAlbion, burnley, chelsea, crystalPalace, everton, fullham, leedsUtd, leicester, liverpool, manCity, manUtd, newcastleUtd, sheffiledUtd, southampton, tottenham, westBrom, westHam, wolverhampton]
+
+        return [arsenal, astonVilla, brightonHovAlbion, burnley, chelsea, crystalPalace, everton, fullham, leedsUtd, leicester, liverpool, manCity, manUtd, newcastleUtd, sheffiledUtd, southampton, tottenham, westBrom, westHam, wolverhampton]
     }()
     
     static var laLigaTeams: [Team] = {
         let alaves = Team(teamName: "Alavés", teamImage: "alaves", city: "Vitoria-Gasteiz", stadium: "Mendizorrotza")
         let athletic = Team(teamName: "Athletic Club", teamImage: "athletic", city: "Bilbao", stadium: "San Mamés")
-        let atletico = Team(teamName: "San Mamés", teamImage: "atletico", city: "Madrid", stadium: "Wanda Metropolitano")
+        let atletico = Team(teamName: "Atlético de Madrid", teamImage: "atletico", city: "Madrid", stadium: "Wanda Metropolitano")
         let barcelona = Team(teamName: "Barcelona", teamImage: "barcelona", city: "Barcelona", stadium: "Camp Nou")
         let betis = Team(teamName: "Real Betis", teamImage: "betis", city: "Seville", stadium: "Benito Villamarín")
         let cadiz = Team(teamName: "Cádiz", teamImage: "cadiz", city: "Cádiz", stadium: "Ramón de Carranza")
@@ -58,4 +58,5 @@ class TeamController {
         
         return [alaves, athletic, atletico, barcelona, betis, cadiz, celta, eibar, elche, getafe, granada, huesca, levante, osasuna, realMadrid, realSociedad, realValladolid, sevilla, valencia, villarreal]
     }()
+    
 }//End of class

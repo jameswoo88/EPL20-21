@@ -7,22 +7,24 @@
 
 import Foundation
 
-class Team {
+class Team: Codable {
     let teamName: String
     let teamImage: String
     let city: String
     let staduim: String
-    let isFavorite: Bool
+    var isFavorite: Bool
+    var leagueNum: Int
     let uuid: String
 
     
-    init(teamName: String, teamImage: String, city: String, stadium: String, isFavorite: Bool = false, uuid: String = UUID().uuidString) {
+    init(teamName: String, teamImage: String, city: String, stadium: String, isFavorite: Bool = false, leagueNum: Int = 0, uuid: String = UUID().uuidString) {
         self.teamName = teamName
         self.teamImage = teamImage
         self.city = city
         self.staduim = stadium
         self.isFavorite = isFavorite
         self.uuid = uuid
+        self.leagueNum = leagueNum
     }
 } //End of class
 

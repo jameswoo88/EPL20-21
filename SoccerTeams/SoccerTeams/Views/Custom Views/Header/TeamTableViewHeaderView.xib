@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="208" id="no5-G8-mSi" customClass="TeamTableViewHeaderView" customModule="SoccerTeams" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="teamTableViewHeader" rowHeight="208" id="no5-G8-mSi" customClass="TeamTableViewHeaderView" customModule="SoccerTeams" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="450" height="208"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="no5-G8-mSi" id="vID-gW-9HO">
@@ -16,7 +16,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gXR-jj-gxz">
-                        <rect key="frame" x="0.0" y="158" width="450" height="50"/>
+                        <rect key="frame" x="0.0" y="150" width="450" height="50"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JMl-hO-8yu">
                                 <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
@@ -27,6 +27,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="League Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDe-6j-jtg">
                                 <rect key="frame" x="158" y="0.0" width="292" height="50"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -38,14 +39,14 @@
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="gXR-jj-gxz" firstAttribute="width" secondItem="vID-gW-9HO" secondAttribute="width" id="1gS-P8-IIs"/>
-                    <constraint firstAttribute="bottom" secondItem="gXR-jj-gxz" secondAttribute="bottom" id="Fps-AR-sJ9"/>
+                    <constraint firstAttribute="bottom" secondItem="gXR-jj-gxz" secondAttribute="bottom" constant="8" id="Fps-AR-sJ9"/>
                     <constraint firstItem="gXR-jj-gxz" firstAttribute="leading" secondItem="vID-gW-9HO" secondAttribute="leading" id="HtG-5G-lxD"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="leagueImageView" destination="JMl-hO-8yu" id="yfp-2w-0mc"/>
                 <outlet property="leagueNameLabel" destination="IDe-6j-jtg" id="gR7-fG-ver"/>
+                <outlet property="stackView" destination="gXR-jj-gxz" id="kaU-Gl-HrI"/>
             </connections>
             <point key="canvasLocation" x="166.66666666666669" y="14.732142857142856"/>
         </tableViewCell>

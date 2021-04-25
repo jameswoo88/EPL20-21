@@ -19,8 +19,11 @@
 		3B9899B62632235D001D9FFE /* TeamDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9899B52632235D001D9FFE /* TeamDetailViewController.swift */; };
 		3B9899DA26324148001D9FFE /* TeamTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9899D926324148001D9FFE /* TeamTableViewHeaderView.swift */; };
 		3B9899DD263241D8001D9FFE /* TeamTableViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9899DC263241D8001D9FFE /* TeamTableViewHeaderView.xib */; };
-		3B9899E12632467A001D9FFE /* TeamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9899E02632467A001D9FFE /* TeamCollectionViewCell.swift */; };
 		3B9899E426324921001D9FFE /* TeamListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9899E326324921001D9FFE /* TeamListTableViewController.swift */; };
+		3B989A722634D184001D9FFE /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B989A702634D184001D9FFE /* TeamTableViewCell.swift */; };
+		3B989A732634D184001D9FFE /* TeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B989A712634D184001D9FFE /* TeamTableViewCell.xib */; };
+		3B989A782634D269001D9FFE /* TeamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B989A762634D269001D9FFE /* TeamCollectionViewCell.swift */; };
+		3B989A792634D269001D9FFE /* TeamCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B989A772634D269001D9FFE /* TeamCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +41,11 @@
 		3B9899B52632235D001D9FFE /* TeamDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailViewController.swift; sourceTree = "<group>"; };
 		3B9899D926324148001D9FFE /* TeamTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewHeaderView.swift; sourceTree = "<group>"; };
 		3B9899DC263241D8001D9FFE /* TeamTableViewHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamTableViewHeaderView.xib; sourceTree = "<group>"; };
-		3B9899E02632467A001D9FFE /* TeamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B9899E326324921001D9FFE /* TeamListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListTableViewController.swift; sourceTree = "<group>"; };
+		3B989A702634D184001D9FFE /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		3B989A712634D184001D9FFE /* TeamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamTableViewCell.xib; sourceTree = "<group>"; };
+		3B989A762634D269001D9FFE /* TeamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B989A772634D269001D9FFE /* TeamCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +180,10 @@
 		3B9899C426323DF3001D9FFE /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				3B9899E02632467A001D9FFE /* TeamCollectionViewCell.swift */,
+				3B989A702634D184001D9FFE /* TeamTableViewCell.swift */,
+				3B989A712634D184001D9FFE /* TeamTableViewCell.xib */,
+				3B989A762634D269001D9FFE /* TeamCollectionViewCell.swift */,
+				3B989A772634D269001D9FFE /* TeamCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -237,7 +246,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B98998926320F92001D9FFE /* LaunchScreen.storyboard in Resources */,
+				3B989A732634D184001D9FFE /* TeamTableViewCell.xib in Resources */,
 				3B98998626320F92001D9FFE /* Assets.xcassets in Resources */,
+				3B989A792634D269001D9FFE /* TeamCollectionViewCell.xib in Resources */,
 				3B9899DD263241D8001D9FFE /* TeamTableViewHeaderView.xib in Resources */,
 				3B98998426320F90001D9FFE /* Main.storyboard in Resources */,
 			);
@@ -251,7 +262,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B9899E426324921001D9FFE /* TeamListTableViewController.swift in Sources */,
-				3B9899E12632467A001D9FFE /* TeamCollectionViewCell.swift in Sources */,
 				3B9899A226320FF6001D9FFE /* Team.swift in Sources */,
 				3B98997D26320F90001D9FFE /* AppDelegate.swift in Sources */,
 				3B9899B62632235D001D9FFE /* TeamDetailViewController.swift in Sources */,
@@ -259,7 +269,9 @@
 				3B9899AA263212F0001D9FFE /* League.swift in Sources */,
 				3B9899B02632206F001D9FFE /* LeagueController.swift in Sources */,
 				3B9899DA26324148001D9FFE /* TeamTableViewHeaderView.swift in Sources */,
+				3B989A782634D269001D9FFE /* TeamCollectionViewCell.swift in Sources */,
 				3B98997F26320F90001D9FFE /* SceneDelegate.swift in Sources */,
+				3B989A722634D184001D9FFE /* TeamTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
